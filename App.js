@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import uuid from 'react-native-uuid';
+
+import Header from './components/Header';
 
 const App = () => {
   const [items, setItems] = useState([
@@ -24,6 +26,7 @@ const App = () => {
 
   return (
     <View>
+      <Header title="Shopping List" />
       <Text>Hello World</Text>
     </View>
   );
